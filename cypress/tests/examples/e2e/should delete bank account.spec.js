@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
 
-const { string } = require("yup");
 
     beforeEach( () => {
 cy.visit('http://localhost:3000/signin')

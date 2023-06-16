@@ -1,13 +1,12 @@
-/// <reference types="Cypress" />
+ /// <reference types="Cypress" />
 
-    beforeEach( () => {
+ beforeEach( () => {
 cy.visit('http://localhost:3000/signin')
 cy.wait(2000)
 //cy.waitfor()
 })
 
     it( 'sign in', () => {
-        
         
         // Fill input[name="username"]
         cy.get('input[name="username"]', {timeout: 1000}).should('be.visible')
@@ -18,7 +17,15 @@ cy.wait(2000)
         // Click [type="submit"]
         cy.get('[type="submit"]', {timeout: 1000}).should('be.visible')
         cy.get('[type="submit"]').click();
+
+        cy.request("GET", "http://localhost:3002/bankaccounts", {
+      }).then((r) => {
+         expect(r.status).to.eq(200)
+         expect(r).to.have.property('headers')
+         expect(r.body).to.contain('')
+         console.log(r.body)
+      });
         
     });
 
-
+    

@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
 
-const { text } = require("stream/consumers");
 
     beforeEach( () => {
 cy.visit('http://localhost:3000/signin')

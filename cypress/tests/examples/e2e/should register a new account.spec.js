@@ -28,8 +28,7 @@ cy.wait(2000)
         cy.get('#confirmPassword').type('Alaska1992');
         // Fill #confirmPassword
         cy.get('[data-test="signup-submit"]', {timeout: 1000}).should('be.visible')
-        cy.get('[data-test="signup-submit"]').click();
-        
+        cy.get('[data-test="signup-submit"]').click(); 
     });
 
 

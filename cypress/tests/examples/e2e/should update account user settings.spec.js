@@ -11,7 +11,7 @@ cy.wait(2000)
         
         // Fill input[name="username"]
         cy.get('input[name="username"]', {timeout: 1000}).should('be.visible')
-        cy.get('input[name="username"]').type('username@domain.com');
+        cy.get('input[name="username"]').type('luis');
         // Fill input[name="password"]
         cy.get('input[name="password"]', {timeout: 1000}).should('be.visible')
         cy.get('input[name="password"]').type('Alaska1992');
