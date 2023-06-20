@@ -22,14 +22,10 @@ beforeEach( () => {
            cy.get('[type="submit"]').click();
    
            cy.request("POST", "http://localhost:3002/comments/4AvM8cN1DdS", 
-           headers: {
-            Content-Type: application/xml
-            Accept: application/json
-            Authorization:
-           }
-          
            {
-         }).then((r) => {
+            "comments": "daejkfbajkfbkj"
+          }
+         ).then((r) => {
             http://localhost:3002/comments/4AvM8cN1DdS
             expect(r.status).to.eq(200)
          });

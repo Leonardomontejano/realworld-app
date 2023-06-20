@@ -20,8 +20,8 @@ cy.wait(2000)
         cy.get('[type="submit"]', {timeout: 1000}).should('be.visible')
         cy.get('[type="submit"]').click();
         // Click  [data-test="user-onboarding-next"]
-        cy.get('[data-test="user-onboarding-next"]', {timeout: 1000}).should('be.visible')
-        cy.get('[data-test="user-onboarding-next"]').click();
+        //cy.get('[data-test="user-onboarding-next"]', {timeout: 1000}).should('be.visible')
+        //cy.get('[data-test="user-onboarding-next"]').click();
         // click  [data-test="sidenav-bankaccounts"]
         cy.get('[data-test="sidenav-bankaccounts"]', {timeout: 1000}).should('be.visible')
         cy.get('[data-test="sidenav-bankaccounts"]').click();

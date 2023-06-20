@@ -19,8 +19,8 @@ cy.wait(2000)
         cy.get('[type="submit"]', {timeout: 1000}).should('be.visible')
         cy.get('[type="submit"]').click();
         // Click  [data-test="user-onboarding-next"]
-        cy.get('[data-test="user-onboarding-next"]', {timeout: 1000}).should('be.visible')
-        cy.get('[data-test="user-onboarding-next"]').click();
+        //cy.get('[data-test="user-onboarding-next"]', {timeout: 1000}).should('be.visible')
+        //cy.get('[data-test="user-onboarding-next"]').click();
         // Get text  #user-settings-firstName-input
         cy.get('#user-settings-firstName-input', {timeout: 1000}).should('be.visible')
         cy.get('#user-settings-firstName-input').type('luis');
